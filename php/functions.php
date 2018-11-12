@@ -1,8 +1,7 @@
 <?php
 
-function pre($item) {
+function pre($thing) {
     echo '<pre>';
-    print_r($item);
+    print_r($thing);
     echo '</pre>';
 };
-

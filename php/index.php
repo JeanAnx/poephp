@@ -1,5 +1,50 @@
 <?php 
 require 'functions.php';
+pre($_POST);
+pre($_FILES);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulaire</title>
+</head>
+
+    <form action="" enctype="multipart/form-data" method="post">
+    
+        <label for="name">Nom : </label>    
+        <input type="text" id="name" name="name"><br>
+        <label for="message">Message : </label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <label for="cv">Fichier :</label>
+        <input type="file" id="cv" name="cv" ><br>
+        <input type="submit">
+
+    </form>
+
+
+<body>
+    
+</body>
+</html>
+
+<?php
+
+pre($GLOBALS);
+// L'ENSEMBLE DES VARIABLES DÉFINIES DANS LE SCRIPT
+
+pre($_SERVER);
+// TOUTES LES INFOS LIÉES AU SERVEUR
+
+pre($_GET);
+
+pre($_FILES);
+
 /*
 
 echo '<h1> Hello WOOOOOOOOORLD </h1>';
@@ -23,6 +68,9 @@ var_dump(-$g);
 
 */
 
+
+/*
+
 $array1 = [
     "nom" => "Annaix",
     "prénom" => "Jean",
@@ -31,6 +79,7 @@ $array1 = [
 ];
 
 pre($array1);
+
 
 $articles = [
     1 => [
@@ -58,3 +107,6 @@ PRE($articles);
 foreach ($articles as $theArticle) {
     pre($theArticle);
 };
+
+
+*/
