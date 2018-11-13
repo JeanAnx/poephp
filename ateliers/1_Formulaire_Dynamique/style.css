@@ -1,3 +1,21 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover > img {
+    opacity: 0.8;
+}
+
+
 h2 {
     margin-bottom: 10px;
 }
@@ -32,7 +50,7 @@ img.pic {
 article {
     display: block;
     width: 550px;
-    border: 1px solid grey;
+    border: 0.5px solid grey;
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
@@ -48,4 +66,33 @@ article {
 
 .choice {
     display: block;
+}
+
+/***********************************************/
+/*************************************************/
+
+.theArticle {
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;  
+}
+
+.theArticle > .paragraphe {
+    width: 100%;
+}
+
+.return {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.return:hover {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0;
 }

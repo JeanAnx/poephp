@@ -40,21 +40,24 @@
             
                 <section class="board">
 
-                <?php   $theArticles = getTheArticle(ARTICLES,$_GET['user']) ?>
+                <?php $theArticles = getTheArticle(ARTICLES,$_GET['user']) ?>
                 
                     <?php foreach ($theArticles as $theArticle) { ?>
                        
                         <article>
+                            <?php $key = array_search($theArticle['title'], array_column(ARTICLES,'title')); ?>
+                            <a href="article.php?id=<?= $key ?>">
                             <h2><?= $theArticle['title']?></h2>
                             <small>Par <?= $theArticle['user']?></small>
                             <img class="pic" src="<?= $theArticle['imageUrl']?>" alt="#">
                             <p class="paragraphe"><?= $theArticle['text'] ?></p>
+                            </a>
                         </article>
                     <?php } 
                                 
                 }
                     
-                    if (empty($theArticles)) { ?>
+                    if (isset($_GET['user']) && empty($theArticles)) { ?>
                     
                         <article class="ohno">
                             <h3><?= $_GET['user'] ?> n'a pas encore écrit d'article (quel boloss ce <?= $_GET['user'] ?>)<h3>

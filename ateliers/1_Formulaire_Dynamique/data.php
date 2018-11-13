@@ -38,7 +38,7 @@ const ARTICLES = [
     ],
 
     4 => [
-        "title" => "Steak Steak steak steak steak",
+        "title" => "Bacon bacon bacon bacon bacon",
         "text" => "Fatback boudin porchetta salami. Pork cupim kevin, burgdoggen ribeye pastrami shank. Jerky ham pancetta ground round turkey boudin, capicola pastrami turducken tri-tip shank picanha drumstick landjaeger. Jowl short loin porchetta t-bone pork salami beef ribs corned beef chuck. Andouille porchetta short ribs cow ham fatback turducken bresaola pork belly tri-tip pancetta ground round. T-bone ham biltong chicken ground round.",
         "user" => "Pierre",
         "imageUrl" => "http://www.strangehistory.net/blog/wp-content/uploads/2018/06/piggy.jpg",
