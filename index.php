@@ -1,7 +1,21 @@
 <?php 
 require 'functions.php';
+session_start();
+$i;
+$_SESSION['test'] = $i + 1;
+echo '$_post :';
 pre($_POST);
+echo '$_files :';
 pre($_FILES);
+echo '$_cookie :';
+pre($_COOKIE);
+echo '$_session :';
+pre($_SESSION);
+
+// DEFINIR UNE CONSTANTE =>
+define("MACONSTANTE" , [100 , 1000]);
+echo('Ma Constante : ');
+pre(MACONSTANTE);
 
 ?>
 
@@ -35,14 +49,18 @@ pre($_FILES);
 
 <?php
 
+echo '$GLOBALS :';
 pre($GLOBALS);
 // L'ENSEMBLE DES VARIABLES DÉFINIES DANS LE SCRIPT
 
+echo '$_SERVER :';
 pre($_SERVER);
 // TOUTES LES INFOS LIÉES AU SERVEUR
 
+echo '$_GET :';
 pre($_GET);
 
+echo '$_FILES :';
 pre($_FILES);
 
 /*

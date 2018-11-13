@@ -1,0 +1,51 @@
+h2 {
+    margin-bottom: 10px;
+}
+h3 {
+    text-align: center;
+}
+small {
+    display: block;
+}
+
+img.pic {
+    width: 550px;
+    margin: 10px auto;
+}
+
+.paragraphe {
+    width: 550px;
+    text-align: justify;
+}
+
+.ohno img {
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#button {
+    margin-left: 10px;
+}
+
+article {
+    display: block;
+    width: 550px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;;
+}
+
+.board {
+    width: 1250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.choice {
+    display: block;
+}
