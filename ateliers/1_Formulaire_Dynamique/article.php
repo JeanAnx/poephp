@@ -1,7 +1,6 @@
 <?php    
     include_once 'data.php';
     include_once 'functions.php';
-
     // pre($_GET['id']); 
     // pre(ARTICLES[$_GET['id']['title']]);    
     $theArticle = ARTICLES[$_GET['id']['title']];
@@ -18,9 +17,8 @@
         <title>Document</title>
     </head>
     <body>
-        
-    </body>
-    </html>                    
+
+                  
 
         <a class="return" href="index.php?user=<?= $theArticle['user']?>">Back</a>
     
@@ -29,5 +27,8 @@
             <small>Par <?= $theArticle['user']?></small>
             <img class="pic" src="<?= $theArticle['imageUrl']?>" alt="#">
             <p class="paragraphe"><?= $theArticle['text'] ?></p>
-            </a>
+
         </article>
+
+</body>
+</html>  

@@ -15,7 +15,6 @@ a:hover > img {
     opacity: 0.8;
 }
 
-
 h2 {
     margin-bottom: 10px;
 }
@@ -68,6 +67,7 @@ article {
     display: block;
 }
 
+
 /***********************************************/
 /*************************************************/
 
@@ -87,12 +87,23 @@ article {
     margin: 10px auto;
     font-size: 2rem;
     text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
 
 .return:hover {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 0;
+    color: grey;
+}
+
+/************************************************/
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+.radio {
+    display: inline-block;
+}
+
+#inputText.hidden {
+    display: none;
 }
