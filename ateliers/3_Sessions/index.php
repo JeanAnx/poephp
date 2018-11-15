@@ -1,7 +1,7 @@
-<?php 
+<?php
     if (empty($_SESSION)) {
         session_start();
-    }
+    };
 ?>
     
     <!DOCTYPE html>
@@ -21,11 +21,11 @@
 
     <?php 
 
-        if ($_GET['user'] == "ok") {
+        if (isset($_GET['user']) && $_GET['user'] == "ok") {
             
             echo '<h2 class="success">L\'utilisateur a bien été enregistré</h2>'; 
             
-            } else if ($_GET['user'] == "notok") { ?>
+            } else if (isset($_GET['user']) && $_GET['user'] == "notok") { ?>
 
                 <h2 class="error">Le formulaire n\'a pas pu être enregistré</h2>
         
@@ -39,9 +39,10 @@
             <label for="nom">Nom : </label>
             <input type="text" name="nom" id="nom">
     
-            <label for="admin">Admin</label>
-            <input type="checkbox" name="admin" value="true">
-    
+            <div id="admin">
+                <label for="admin">Admin</label>
+                <input type="checkbox" name="admin" value="true">
+            </div>
             <input id="buttonSubmit" type="submit" value="Envoyer">
     
         </form>
@@ -51,7 +52,7 @@
         
             <?php 
 
-                if($_SESSION['admin'] == true) {
+                if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
                     echo '<a href="admin.php">Administration</a>';
                 }
             
