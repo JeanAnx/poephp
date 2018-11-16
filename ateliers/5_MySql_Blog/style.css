@@ -1,0 +1,179 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.success {
+    color: green;
+    text-align: center;
+}
+
+form > input.hidden {
+    display: none;
+}
+
+.creationForm > input.hidden {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 400px;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 25px auto;
+    width: 50%;
+}
+
+header {
+    text-align: center;
+}
+
+.newsFeed , .newsFeedAdmin{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 800px;
+    margin: 10px auto;
+}
+
+.newsFeed > article {
+    text-align: justify;
+    width: 700px;
+    margin: 10px auto;
+}
+
+i.far.fa-newspaper {
+    font-size: 4.5rem;
+    font-weight: lighter;
+}
+
+.linkAdmin {
+    font-size: 2rem;
+    color: brown;
+}
+
+
+form {
+    display: block;
+    width: 170px;
+    margin: 20px auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+label {
+    display: block;
+}
+
+.creationForm {
+    width: 500px;
+}
+
+.creationForm > input {
+    margin-block-end: 20px;
+}
+
+input , textarea {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 0.5px solid gainsboro;
+}
+
+#buttonSubmit {
+    display: block;
+    width: 70px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.deconnexion , .creation , .edition {
+    border-style: none;
+    border: 0px;
+    box-shadow: none;
+    margin: 8px auto;
+    padding: 0;
+}
+
+.deconnexion > input , .creation > input , .edition > input {
+    padding: 8px;
+}
+
+.creation > input {
+    color: white;
+    background-color: green;
+}
+
+.creation > input:hover {
+    color: green;
+    background-color: white;
+}
+
+.blocEdition {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.blocEdition > a {
+    text-align: center;
+    display: block;
+    width: 100px;
+    background-color: beige;
+    margin: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+a.goBack {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+}
+
+form.goBack {
+    border-style: none;
+    border: 0px;
+    box-shadow: none;
+    margin: 8px auto;
+    padding: 0;
+}
+
+form.goBack > input {
+    padding: 10px;
+}
+
+.warning {
+    color: orange;
+    text-align: center;
+}
+
+
+.listeArticles #listeArticles {
+    border-style: none;
+    box-shadow: none;
+    width: 80%;
+}
+
+article > img {
+    width: 100%;
+}
